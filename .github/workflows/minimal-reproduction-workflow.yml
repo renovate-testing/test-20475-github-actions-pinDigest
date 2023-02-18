@@ -1,0 +1,11 @@
+name: Minimal reporoduction workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install AWS cli
+        uses: unfor19/install-aws-cli-action@v1
